@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Exercise05 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private int num;
+    public int[] array;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach (int i in array)
+        {
+            num = num + i;
+        }
+        Debug.Log($"{array[0]} + {array[1]} + {array[2]} + {array[3]} + {array[4]} = {num}");
     }
 }

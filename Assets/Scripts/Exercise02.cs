@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Exercise02 : MonoBehaviour
 {
-    private int i = 0;
+    private int i = 1;
     void Start()
     {
-        while (i < 20)
+        while (i <= 20)
         {
             Debug.Log(message:"Hola holita vecinito");
+            i++;
         }
     }
 

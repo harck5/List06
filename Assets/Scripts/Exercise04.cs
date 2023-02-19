@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Exercise04 : MonoBehaviour
 {
-    public int start;
-    public int end;
+    public int left;
+    public int right;
+    private int i;
     void Start()
     {
-        while (start < end)
+        left = i;
+        while (i < right)
         {
-            Debug.Log();
+            if (i % 5 == 0)
+            {
+                Debug.Log(i);
+            }
+            i++;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
